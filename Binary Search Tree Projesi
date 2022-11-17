@@ -1,16 +1,86 @@
 Insertion Sort Projesi
 PROJE 3
-1. [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] -> Binary Search Tree
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
 
-2. root [7] seçtik.
+Örnek: root x'dir. root'un sağından y bulunur. Solunda z bulunur vb.
+         [7,5,1,8,3,6,0,9,4,2]
 
-3.	 			7
-			      /   \
-4. 			     5	   8
-		   	   /	  / \
-5.		         1	6     9
-		        / \
-6.		      0	    3
-			   / \
-7.		   	 2     4
+1)Sıralama adımları :
+       7
+   -----------------
+       7
+      /
+     5
+   -----------------
+        7
+       /
+      5
+    /
+   1
+   ------------------
+         7
+       /   \
+      5     8
+    /
+   1
+  ------------------
+         7
+       /   \
+      5     8
+    /        
+   1 
+    \
+     3
+  ------------------
+         7
+       /   \
+      5     8
+    /  \      
+   1    6
+    \
+      3     
+ ------------------
+         7
+       /   \
+      5     8
+    /  \      
+   1    6
+  / \
+ 0   3 
+ ------------------
+         7
+       /   \
+      5     8
+    /  \     \
+   1    6     9
+  / \
+ 0   3 
+------------------
+         7
+       /   \
+      5     8
+    /  \     \
+   1    6     9
+  / \
+ 0   3
+      \
+       4
+------------------
+         7
+       /   \
+      5     8
+    /  \     \
+   1    6     9
+  / \
+ 0   3
+    / \
+   2   4
+   
+    10 indeksli dizimizde 1. index olan 7 elemanı Root olur.
+    Root = 7
+    Rootun sağında 8 solunda 5 bulunur.
+    - 8'in sağında 9 vardır.
+    - 5'in sağında 6 solunda 1 vardır.
+    - 1'in solunda 0 sağında 3 vardır.
+    - 3'ün solunda 2 sağında 4 vardır. (2 ve 4 bu ağacın yaprak düğümleridir.)
 www.patika.com
